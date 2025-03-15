@@ -22,7 +22,7 @@ def ban_user(message):
     else:
         bot.reply_to(message, "Эта команда должна быть использована в ответ на сообщение пользователя, которого вы хотите забанить.")
 
-@bot.message_handler(func=lambda message: True) # Обработчик всех сообщений
+@bot.message_handler(func=lambda message: True) 
 def check_links(message):
     if "https://" in message.text or "http://" in message.text:
         # Запрещаем ссылки
